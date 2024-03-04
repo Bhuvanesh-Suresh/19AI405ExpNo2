@@ -62,8 +62,8 @@ def dfs(graph,start,visited,path):
     visited[start]=True
     for neighbour in graph[start]:
         if visited[neighbour]==False:
-           dfs(graph,neighbour,visited,path)
-           visited[neighbour]=True
+            dfs(graph,neighbour,visited,path)
+            visited[neighbour]=True
     return path
 graph=defaultdict(list)
 n,e=map(int,input().split())
